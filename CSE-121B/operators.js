@@ -3,7 +3,7 @@ let shipHealth = 3;
 let shipAmmo = 3;
 let targetHealth = 3;
 
-function ishit(){
+function isHit(){
     return Math.random() > 0.5;
 }
 
