@@ -20,8 +20,8 @@ const Picture = 'images/DamianPortrait.jpg';
 // Step 6: copy your image into the "images" folder
 
 // Step 7: place the value of the picture variable into the HTML file (hint: document.querySelector().setAttribute())
-document.querySelector('img').setAttribute('src', Picture);
-document.querySelector('img').setAttribute('alt', 'Photo');
+document.querySelector('#img').setAttribute('src', Picture);
+document.querySelector('#img').setAttribute('alt', 'Photo');
 
 /* ARRAYS */
 
