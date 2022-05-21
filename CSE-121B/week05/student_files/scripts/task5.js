@@ -98,7 +98,8 @@ const output = (temples) => {
 // Step 6: Finally, call the output function and pass it the list of temples. Execute your getTemples function to make sure it works correctly.
 const getTemples = async () => {
     const response = await fetch (
-        'https://byui-cse.github.io/cse121b-course/week05/temples.json');
+        'https://byui-cse.github.io/cse121b-course/week05/temples.json')
+        ;
     templeList = await response.json();
     output(templeList);
 };
@@ -113,41 +114,41 @@ const reset = () => {
 // - Calls the output function passing in the sorted list of temples
 const sortBy = () => {
     reset();
-    let filter = document.querySelector("sortBy").value;
+    let filter = document.querySelector("#sortBy").value;
 
     switch(filter){
+        case "templeNameAscending":
+        output(
+        templeList.sort((a, b) => {
+            let templeName1 = a.templeName.toLowerCase();
+                templeName2 = b.templeName.toLowerCase();
+        
+            if (templeName1 < templeName2) {
+                return -1;
+            }
+            if (templeName1 > templeName2) {
+                return 1;
+            }
+            return 0;
+            })
+        );
+        break;
         case "templeNameDescending":
             output(
                 templeList.sort((a, b) => {
-                    let templeName1 = a.templeName.toLowerCase(),
+                    let templeName1 = a.templeName.toLowerCase();
                         templeName2 = b.templeName.toLowerCase();
                 
-                    if (templeName1 < templeName2) {
-                        return 1;
-                    }
                     if (templeName1 > templeName2) {
                         return -1;
+                    }
+                    if (templeName1 < templeName2) {
+                        return 1;
                     }
                     return 0;
 
                 })
             );
-                break;
-                case "templeNameAscending":
-                    output(
-                        templeList.sort((a, b) => {
-                            let templeName1 = a.templeName.toLowerCase(),
-                                templeName2 = b.templeName.toLowerCase();
-                        
-                            if (templeName1 < templeName2) {
-                                return 1;
-                            }
-                            if (templeName1 > templeName2) {
-                                return -1;
-                            }
-                            return 0;
-                        })
-                    );
     };
 };
 // Step 9: Add a change event listener to the HTML element with an ID of sortBy that calls the sortBy function
