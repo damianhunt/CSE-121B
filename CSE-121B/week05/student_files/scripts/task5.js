@@ -121,7 +121,7 @@ const sortBy = () => {
         output(
         templeList.sort((a, b) => {
             let templeName1 = a.templeName.toLowerCase();
-                templeName2 = b.templeName.toLowerCase();
+            let templeName2 = b.templeName.toLowerCase();
         
             if (templeName1 < templeName2) {
                 return -1;
@@ -137,7 +137,7 @@ const sortBy = () => {
             output(
                 templeList.sort((a, b) => {
                     let templeName1 = a.templeName.toLowerCase();
-                        templeName2 = b.templeName.toLowerCase();
+                    let templeName2 = b.templeName.toLowerCase();
                 
                     if (templeName1 > templeName2) {
                         return -1;
