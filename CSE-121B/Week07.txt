@@ -1,0 +1,5 @@
+https://www.w3schools.com/js/ - W3schools for me has been a great help within this course for basic tips and info and also the ability to try code live.
+https://www.javascript.com/ - This site gives allot of info needed and I feel is definitely a good source.
+https://stackoverflow.com/ - This site has so many good responses by people in the field of any programming language in fact. Whenever I need some personal info from other programmers I look here.
+https://www.codegrepper.com/ - I have found some useful basic tips on this site with so many related searches after trying to figure something out.
+https://codepen.io/ - I love Codepen as it allows the user to try JavaScript live with HTML and CSS next to it which is extremely useful on actually seeing your code come out live. You are also able to see many other developers project here which is so helpful.
